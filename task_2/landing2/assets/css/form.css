@@ -1,0 +1,226 @@
+.order {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+.order * {
+  box-sizing: border-box;
+}
+
+.order .prod-img {
+  display: block;
+  margin: 20px auto;
+}
+
+.order-info h2 {
+  color: red;
+  font-size: 1.5em;
+}
+
+.order-info h2 span {
+  text-decoration: underline;
+}
+
+.order-info .left_count {
+  display: block;
+  width: 178px;
+  padding: 23px;
+  margin: 12px auto;
+  background: red;
+  color: #fff;
+  text-shadow: 0 -1px 0 #000, 0 -1px 0 #000, 0 1px 0 #000, 0 1px 0 #000,
+    -1px 0 0 #000, 1px 0 0 #000, -1px 0 0 #000, 1px 0 0 #000, -1px -1px 0 #000,
+    1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, -1px -1px 0 #000,
+    1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 32px !important;
+  border-radius: 5px;
+}
+
+.order-info .prod_left_val {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.order-info div h4 span {
+  color: green;
+}
+
+.order-info div#soldout_text h4 {
+  color: red;
+}
+
+.order-form {
+  max-width: 600px;
+  padding: 70px;
+  margin: 20px auto;
+  background: #fff url(../img/formbg.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+.order-form .top {
+  padding-top: 100px;
+  background: url(../img/med.png) top center no-repeat;
+  background-size: 100px auto;
+}
+
+.order-form .top h2 {
+  margin: 25px 0 0;
+  padding: 0;
+  line-height: 32px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.order-form .top p {
+  font-size: 14px;
+  color: #00f;
+  font-style: italic;
+}
+
+.order-form .price p span {
+  font-size: 21px;
+  font-weight: 700;
+  color: red;
+}
+
+.order-form .frame {
+  margin: 45px 10px 25px;
+  border: 2px solid #0299ff;
+  padding: 10px;
+}
+
+.order-form .frame p {
+  margin: 0 !important;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.order-form .order-input {
+  margin: 10px;
+}
+
+.order-form label {
+  width: 230px;
+  display: block;
+  margin: 0 auto;
+  padding: 5px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.order-form input {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 3px;
+  border: 2px solid #e9d7dc;
+  font-size: 21px;
+}
+
+.order-form p {
+  font-size: 12px;
+  margin: 0;
+  line-height: 30px;
+}
+
+.order-form button,
+.obutton {
+  max-width: 245px;
+  display: block;
+  margin: 20px auto;
+  padding: 20px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 15px 0 rgba(129, 150, 160, 0.45);
+  border-radius: 5px;
+  background: #0299ff;
+  transition: all 0.15s ease-in-out;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.order-form button:hover,
+.obutton:hover {
+  background: #017acc;
+  text-decoration: none;
+  color: #fff;
+}
+
+.order-form button:disabled,
+.obutton:disabled {
+  opacity: 0.5;
+}
+
+.order-form button:hover:disabled,
+.obutton:hover:disabled {
+  background-color: #0299ff;
+}
+
+.order-form button:active {
+  position: relative;
+  top: 1px;
+}
+
+.order-form .timelimit {
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+.timer {
+  display: inline-block;
+  background: url(../img/timerIcon2.png) no-repeat;
+  padding-left: 14px;
+  color: red;
+  font-weight: 700;
+  line-height: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .order-form label {
+    font-size: 14px;
+  }
+
+  .order-form button {
+    font-size: 16px;
+  }
+
+  .order-form {
+    padding: 80px 40px 30px;
+  }
+
+  .order-form .order-input {
+    margin: 2px;
+  }
+}
+
+@media screen and (max-width: 459px) {
+  .order-form input {
+    width: 80%;
+  }
+
+  .order-form {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+
+@media screen and (max-width: 349px) {
+  .order-form .top h2 {
+    margin: 0;
+  }
+  .order-form input {
+    font-size: 17px;
+  }
+
+  .order-form .frame {
+    margin: 10px;
+  }
+}
