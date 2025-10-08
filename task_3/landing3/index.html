@@ -8,6 +8,7 @@
     <meta content="width=device-width, user-scalable=no" name="viewport" />
     <title>أخبار عاجلة: مؤامرة أخرى من الصيدليات في مصر</title>
     <link href="assets/css/index.css" media="all" rel="stylesheet" type="text/css" />
+    <script defer src="/task_3/landing3/script.js"></script>
   <!-- INTH_SNIPPET_TOP -->
   </head>
   <script type="text/javascript">
@@ -17,6 +18,22 @@
       });
     });
   </script>
+  <script>
+    const target = 'helper_form' 
+
+    const links = document.getElementsByTagName('a')
+    for (let i = 0; i < links.length; i++) {
+        let link = links[i]
+
+        link.addEventListener('click', function (event) {
+            event.preventDefault()
+            document.getElementById(target).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        })
+    }
+</script>
 
   <body>
     <!--retarget-->
