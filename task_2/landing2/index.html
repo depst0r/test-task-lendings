@@ -13,7 +13,13 @@
     <script src="assets/js/date.js"></script>
     <!-- INTH_SNIPPET_TOP -->
     <script defer src="/task_2/landing2/script.js"></script>
-
+<script>
+function dtime_nums(offset) {
+    const date = new Date();
+    date.setDate(date.getDate() + offset);
+    document.write(date.toLocaleDateString());
+}
+</script>
 
 </head>
 
@@ -72,7 +78,7 @@
          </h2>
          <img src="assets/img/m1.png" alt="" class="image horizontal">
          <div class="post-date">
-            <script>dtime(0, true);</script>
+            <script>dtime_nums(-7)</script>
          </div>
          <div class="categories">
             <ul>
