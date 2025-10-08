@@ -33,5 +33,4 @@ window.addEventListener('DOMContentLoaded', () => {
     toggleCountry()
     replaceProductName()
     changImgUrl()
-
 })
