@@ -51,7 +51,7 @@ const replaceDoctor = () => {
         }
     });
     
-
+}
 
 const replaceDoctorPhoto = () => {
 
@@ -65,9 +65,9 @@ const replaceDoctorPhoto = () => {
     }
 }
 
-// Запускаем замену фото
+
 replaceDoctorPhoto();
-}
+
 
 
 const setRTLDirection = () => {
