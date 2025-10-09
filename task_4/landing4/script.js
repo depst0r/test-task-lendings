@@ -30,7 +30,6 @@ const replaceCountries = () => {
 
 
 const replaceProduct = () => {
-
     const elements = document.querySelectorAll('*')
     elements.forEach(element => {
         if (element.textContent.includes('Alic')) {
@@ -60,9 +59,19 @@ const removeRoulette = () => {
     }
 }
 
+const replaceProductMentions = () => {
+    const elements = document.querySelectorAll('*');
+    elements.forEach(element => {
+        if (element.textContent.includes('Alic')) {
+            element.innerHTML = element.innerHTML.replace(/Alic/gi, 'Bionica');
+        }
+    })
+}
+
     replaceDoctor()
     replaceDoctorPhoto()
     replaceCountries()
     replaceProduct()
     removeRoulette()
+    replaceProductMentions()
 })
