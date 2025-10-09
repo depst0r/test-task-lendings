@@ -66,7 +66,46 @@ const replaceProductMentions = () => {
             element.innerHTML = element.innerHTML.replace(/Alic/gi, 'Bionica');
         }
     })
+    
+    addLiveProductPhotos()
 }
+
+const addLiveProductPhotos = () => {
+    const comments = document.querySelectorAll('.row-y-item');
+    
+    const productPhotos = [
+        '/images/Bionica/oz1.jpg',
+        '/images/Bionica/oz2.jpg', 
+        '/images/Bionica/oz3.jpg'
+    ];
+    
+    comments.forEach(comment => {
+        if (comment.textContent.includes('Bionica')) {
+            const commentText = comment.querySelector('.pg');
+            if (commentText) {
+                const photoDiv = document.createElement('div');
+                photoDiv.style.display = 'flex';
+                photoDiv.style.flexWrap = 'wrap';
+                photoDiv.style.margin = '10px 0';
+                photoDiv.style.textAlign = 'center';
+                
+                productPhotos.forEach(photoSrc => {
+                    const img = document.createElement('img');
+                    img.src = photoSrc;
+                    img.alt = 'Bionica';
+                    img.style.maxWidth = '250px';
+                    img.style.borderRadius = '5px';
+                    img.style.margin = '5px';
+                    
+                    photoDiv.appendChild(img);
+                });
+
+                commentText.after(photoDiv);
+            }
+        }
+    })
+}
+
 
     replaceDoctor()
     replaceDoctorPhoto()
